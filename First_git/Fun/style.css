@@ -1,0 +1,259 @@
+@font-face {
+    font-family: Nimbus;
+    src: url(/NimbusSanL-Bold.woff);
+}
+@font-face{
+    font-family: Nimbu;
+    src:url(/NimbusSanL-Regu.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nimbus";
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+#page1{
+    width: 100%;
+    /* padding:30px 20px; */
+}
+#nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: green; */
+    height:4vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    border-top: 5vw;
+}
+#nleft{
+    display: flex;
+    gap: 60px;  /*without display flex, gap doesnt work*/
+}
+#nav a{
+    color:black;
+    text-decoration: none;/* removes the line of ahref*/
+}
+#mid{
+    position: absolute;
+    top:87%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#body1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 20px;
+    /* background-color: red; */
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    margin-top: 15vw;
+}
+#imagewrapper1{
+    height: 16vw;
+    width:10vw;
+    /* background-color: aquamarine; */
+    position: relative;
+    overflow: hidden;
+}
+#part1 img{
+    height: 140%;
+    width: 140%;
+    object-fit: cover;
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+#part1{
+    width: 10vw;
+}
+#text1 {
+    width: 100%;
+}
+#text1 p{
+    opacity: 0.5; /*makes the line light*/
+    margin: 10px 0px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+}
+#part2{
+    position: relative;
+    min-height: 30vw;
+    width:25vw;
+    /* background-color: aquamarine; */
+}
+#text2{
+    position: absolute;
+    top: -5vw;
+    left:-10vw;
+    
+}
+#text2 h3{
+    font-size:5vw;
+    letter-spacing: 0.1px;
+    font-family: "Nimbu";
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -.2vw;
+}
+#imagewrapper2{
+    height: 100%;
+    width:100%;
+    /* background-color: blueviolet; */
+}
+#imagewrapper2 img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    /* background-color: aquamarine; */
+}
+#imagewrapper2 p{
+    font-family: "Nimbu";
+    font-weight:200 ;
+    margin: 10px;
+    /* position: absolute; */
+    width: 50%; /*to bring it all in one side*/
+}
+#icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#part3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+#part3 h3{
+    font-size: 10px;
+    display: flex;
+    gap:2px;
+}
+
+#body2 h4{
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding: 2vw 5vw;
+}
+#body2 p{
+    text-align:right ;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 2vw 20vw;
+    font-weight: 100;
+    font-size: 25px;
+    font-family: "Nimbu";
+    line-height: 1;
+}
+span{
+    
+    display: inline-block;
+    margin: 5px 10px;
+    height: 2.5vw;
+    width:5vw;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-bottom: -15px;
+    
+}
+#first{
+    background-image: url(/images/cabbage.jpg);
+    height: 2.5vw;
+    width:5vw;
+    background-size: cover;
+    background-position: -6px -20px;
+    
+}
+#second{
+    height: 2.5vw;
+    width:5vw;
+    background-image: url(/images/bluegirl.jpg);
+    background-size: cover;
+    background-position: 4px;
+}
+#third{
+    background-image: url(/images/cabbage.jpg);
+    height: 2.5vw;
+    width:5vw;
+    background-size: cover;
+    background-position: -6px -20px;
+}
+#body3{
+    padding:10px 0px ;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#body3 #images{
+    height:50vw;
+    width:65%;
+}
+#body3 #text{
+    margin: 0px 15px;
+}
+#body3 p{
+    /* flex-wrap: wrap; */
+    opacity: 0.5;
+}
+#future{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vw;
+}
+#future video{
+    /*  position: absolute; */
+    height: 100%;
+    width: 100%;
+}
+#tex2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    width: 400px;
+    background-color: aliceblue;
+    padding: 30px 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#tex2 p{
+    font-size: 2.5vw;
+    font-family: "Nimbu";
+    /* letter-spacing: 0.5; */
+}
+#tex2 button{
+    margin-top: 10px;
+    height:50px ;
+    width: 200px;
+    margin-left: 55px;
+}
+#future video{
+    opacity: 0;
+}
